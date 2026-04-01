@@ -38,9 +38,9 @@ function steepest_descent_armijo(f, grad_f, x0; c1 = 1e-4, rho = 0.5, tol = 1e-6
     hist_norm_g = Float64[]
     hist_backtracks = Int[]
 
-    start_time = time()
-    k = 0
-    stop_r = "max_iter"
+    start_time = time();
+    k = 0;
+    stop_r = "max_iter";
     
     while k < k_max
         fx = f(x)
