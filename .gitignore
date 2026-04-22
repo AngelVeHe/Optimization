@@ -2,3 +2,12 @@ M_sys_125x125.txt
 V_sys_125x1.txt
 noisy25_kodim23_greylevel.png
 main.jl
+5k_iters.png
+10k_iters.png
+15k_iters.png
+conv.png
+GCvsGCP.png
+optimizacion.py
+ImageDenoising.ipynb
+Original.png
+plot_4.png
