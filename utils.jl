@@ -686,3 +686,36 @@ function denoising(u0_matrix, total_iters)
 
     return u, hist_norm_∇u
 end
+
+function baele(x::AbstractArray{Float64})
+    if length(x) != 2
+        throw(DimensionMismatch(x, "Array size must be 2"))
+    end
+
+    x1 = x[1]
+    x2 = x[2]
+
+    return (1.5 - x1 + x1 * x2)^2 + (2.25 - x1 + x1 * x2^2)^2 + (2.625 - x1 + x1 * x2^3)^2
+
+end
+
+function himmelblau(x::AbstractArray{Float64})
+    if length(x) != 2
+        throw(DimensionMismatch(x, "Array size must be 2"))
+    end
+
+    x1 = x[1]
+    x2 = x[2]
+
+    return (x1^2 + x2 - 11)^2 + (x1 + x2^2 - 7)^2
+    
+end  
+
+function baeleGradient(x::AbstractArray{Float64})
+    if length(x) != 2
+        throw(DimensionMismatch(x, "Array size must be 2"))
+    end
+
+    
+
+end

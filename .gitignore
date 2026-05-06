@@ -11,3 +11,7 @@ optimizacion.py
 ImageDenoising.ipynb
 Original.png
 plot_4.png
+main_ND.py
+main2_BFGS.py
+.ipynb_checkpoints
+__pycache__
